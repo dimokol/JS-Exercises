@@ -107,7 +107,7 @@ const basket3Cost = basket3.reduce((sum, basketProduct) => {
 		currentCount.count += 1;
 	}
 
-    const offer = offers2.find((offer) => offer.name === basketProduct);
+    const offer = offers3.find((offer) => offer.name === basketProduct);
 	const product = products.find((product) => product.name === basketProduct);
     if (!offer) {
 		sum += product.cost;

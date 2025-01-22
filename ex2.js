@@ -9,12 +9,9 @@ const cars = [
 	}
 ];  
 
-const newCars = cars.reduce((acc, cur) => {
-	acc.push({
-		...cur,
+const newCars = cars.map(car => ({
+		...car,
 		serviced: true
-	});
-	return acc;
-}, []);
+}));
 
 console.log("newcars", newCars);
